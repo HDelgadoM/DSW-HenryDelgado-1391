@@ -4,11 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuestionario Fase 4</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Seleccione cuestionario
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Box model</a></li>
+                <li><a class="dropdown-item" href="quiz 2.html">Selectores CSS</a></li>
+                <hr class="dropdown-divider">
+            </ul>
+        </li>
+    </nav>
+
     <h1 id="resultado">Responda las siguientes preguntas sobre el Modelo de cajas (Box model)</h1>
     <div>
         <form name="formulario">
@@ -42,10 +57,10 @@
             <h3>5. De los siguientes ejemplos de elementos, ¿cuáles usan por defecto “block” como tipo de visualización
                 externa? </h3>
             <input type="radio" name="r5" value="a"> a. Encabezados "h1" y elementos "p". <br>
-                    <input type="radio" name="r5" value="b"> b. Enlaces "a" y elementos "span". <br>
-                            <input type="radio" name="r5" value="c"> c. Ninguna de las anteriores. <br>
+            <input type="radio" name="r5" value="b"> b. Enlaces "a" y elementos "span". <br>
+            <input type="radio" name="r5" value="c"> c. Ninguna de las anteriores. <br>
 
-                            <input type="button" value="Enviar" onclick="procesarRespuestas()">
+            <input type="button" value="Enviar" onclick="procesarRespuestas()">
         </form>
     </div>
     <script src="script.js"></script>
