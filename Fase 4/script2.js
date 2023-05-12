@@ -2,8 +2,8 @@ function procesarRespuestas() {
     let total = 5
     let puntos = 0;
 
-    let myForm = document.forms["formulario"];
-    let respuestasCorrectas = ["c", "a", "b", "b", "a"];
+    let myForm = document.forms["formulario2"];
+    let respuestasCorrectas = ["A", "B", "B", "B", "A"];
 
     for (let i = 1; i <= total; i++) {
         if (myForm["r" + i].value == null ||
@@ -16,6 +16,6 @@ function procesarRespuestas() {
         }
     }
     let resultado = document.getElementById('resultado')
-    resultado.innerHTML = 'Obtuviste ' + puntos + ' puntos de ' + total + ' posibles ';
+    resultado.innerHTML = 'Obtuve ' + puntos + ' puntos de ' + total + ' posibles ';
     return false;
 }
